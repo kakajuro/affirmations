@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import { getRandomInt } from "./funcs";
+
 
 function App() {
+  const makeRequest = () => {
+    const int = 2;
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    var url = "";
+
+    if (int===1) {
+        url = "https://affirmations.dev";
+        fetch(proxyurl + url) 
+        .then(response => response.json())
+        .then(responseJSON => console.log(responseJSON.affirmation))
+        .catch(() => console.log("Unable to access " + url))
+    } else {
+        url = "https://zenquotes.io/api/random"; 
+        fetch(proxyurl + url) 
+        .then(response => response.json())
+        .then(responseJSON => console.log(responseJSON[0].q))
+        .catch(() => console.log("Unable to access " + url))
+    }
+  }
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="window">
+      <div className="container">
+        <h1 className="affirmation">Affirmations Text</h1>
+        <button
+          onClick={() => makeRequest()}
+        >Generate</button>
+      </div>
+
     </div>
   );
 }
