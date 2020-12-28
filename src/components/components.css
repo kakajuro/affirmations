@@ -6,5 +6,7 @@
 
 .affirmation {
     text-align: center;
+    font-weight: bolder;
+    color: #5196f0;
+    max-width: 750px;
 }
-

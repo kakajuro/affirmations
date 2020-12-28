@@ -54,12 +54,14 @@ function App() {
   return (
     <div className="window">
       <div className="container">
-        {isLoading ? <LoadingSpinner /> : <Quote loadedQuote={quote}/>}
+        <div className="quote">
+          {isLoading ? <LoadingSpinner /> : <Quote loadedQuote={quote}/>}
+        </div>
         <button
+          className="btn"
           onClick={() => makeRequest()}
         >Generate</button>
       </div>
-
     </div>
   );
 }
