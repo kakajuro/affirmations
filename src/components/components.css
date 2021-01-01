@@ -12,6 +12,7 @@
 .gitIcon:hover {
   color: #0f4c9c;
   transition: 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .affirmation {
