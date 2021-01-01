@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import './App.css';
 
-import { getRandomInt } from "./components/funcs";
 import LoadingSpinner from './components/loadingSpinner';
 import Quote from './components/quote';
+import GithubIcon from './components/gitIcon';
+import { getRandomInt } from "./components/funcs";
 
 function App() {
   const [quote, setQuote] = useState("");
@@ -52,7 +53,11 @@ function App() {
   }
 
   return (
-    <div className="window">
+    <div>
+      <header className="heading">
+        <GithubIcon />
+      </header>
+    <div className="main-window">
       <div className="container">
         <div className="quote">
           {isLoading ? <LoadingSpinner /> : <Quote loadedQuote={quote}/>}
@@ -68,6 +73,7 @@ function App() {
         </p>
       </div>
     </div>
+  </div>
   );
 }
 

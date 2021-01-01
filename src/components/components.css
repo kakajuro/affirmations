@@ -4,6 +4,16 @@
     padding: 1rem 1rem;
 }
 
+.gitIcon {
+  color: #000000;
+  transition: 0.3s ease-in-out;
+}
+
+.gitIcon:hover {
+  color: #0f4c9c;
+  transition: 0.3s ease-in-out;
+}
+
 .affirmation {
     text-align: center;
     font-weight: bolder;
