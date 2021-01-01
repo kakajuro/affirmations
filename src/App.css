@@ -2,11 +2,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
+a:link, a:visited {
+  color: #0b59d6;
+  text-decoration: none;
+}
+
 .window {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 9rem;
 }
 
 .container {
@@ -42,3 +48,7 @@
   transition: 0.3s ease-in-out;
 }
 
+.credits {
+  padding-top: 180px;
+  color:#5196f0
+}

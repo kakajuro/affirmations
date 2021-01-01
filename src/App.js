@@ -16,7 +16,7 @@ function App() {
 
     fetch(proxyurl + url)
     .then(response => response.json())
-    .then(responseJSON => setQuote("Today's quote: " + responseJSON[0].q))
+    .then(responseJSON => setQuote("Daily Quote: " + responseJSON[0].q))
     .then(() => setIsLoading(false))
   }, [])
 
@@ -61,6 +61,11 @@ function App() {
           className="btn"
           onClick={() => makeRequest()}
         >Generate</button>
+      </div>
+
+      <div className="credits">
+        <p>Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank"> ZenQuotes API</a> and <a href="https://github.com/annthurium/affirmations/">affirmations.dev</a>
+        </p>
       </div>
     </div>
   );
