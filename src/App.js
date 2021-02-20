@@ -12,7 +12,7 @@ function App() {
 
   useEffect(() => {
     setIsLoading(true);
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const proxyurl = "https://fathomless-brushlands-29705.herokuapp.com/";
     const url = "https://zenquotes.io/api/today";
 
     fetch(proxyurl + url)
@@ -24,7 +24,7 @@ function App() {
   const makeRequest = () => {
     setIsLoading(true);
     const int = getRandomInt(1, 2);
-    const proxyurl = "https://cors-anywhere.herokuapp.com/";
+    const proxyurl = "https://fathomless-brushlands-29705.herokuapp.com/";
     var url = "";
 
     if (int===1) {
