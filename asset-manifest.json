@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/affirmations/static/css/main.43ac8afe.chunk.css",
-    "main.js": "/affirmations/static/js/main.3746ec2b.chunk.js",
-    "main.js.map": "/affirmations/static/js/main.3746ec2b.chunk.js.map",
+    "main.js": "/affirmations/static/js/main.7508a831.chunk.js",
+    "main.js.map": "/affirmations/static/js/main.7508a831.chunk.js.map",
     "runtime-main.js": "/affirmations/static/js/runtime-main.4770c48c.js",
     "runtime-main.js.map": "/affirmations/static/js/runtime-main.4770c48c.js.map",
     "static/js/2.290f47c5.chunk.js": "/affirmations/static/js/2.290f47c5.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.4770c48c.js",
     "static/js/2.290f47c5.chunk.js",
     "static/css/main.43ac8afe.chunk.css",
-    "static/js/main.3746ec2b.chunk.js"
+    "static/js/main.7508a831.chunk.js"
   ]
 }
